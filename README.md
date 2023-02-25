@@ -1,16 +1,11 @@
 # omada-debian
 Instalacion de controlador omada en debian 11
 
-### Clonar el repositorio
 ```
-git clone https://github.com/wirisp/omada-debian.git omada
+wget https://raw.githubusercontent.com/wirisp/omada-debian/main/omada.sh
 ```
 
 ```
-cd omada
-``
-
-``
 chmod +x omada.sh
 ```
 
