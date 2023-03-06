@@ -15,6 +15,14 @@ bash omada.sh
 
 _Acceder al controlador por medio de la Ip:8043 u Ip:8088_
 
+## Eliminacion de omada
+
+```
+cd /opt/tplink/EAPController
+```
+```
+./uninstall.sh
+```
 
 ## Instalacion alternativa en Docker
 
