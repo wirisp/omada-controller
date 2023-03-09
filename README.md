@@ -2,7 +2,7 @@
 Instalacion de controlador omada en debian 11
 
 ```
-wget https://raw.githubusercontent.com/wirisp/omada-debian/main/omada.sh
+wget https://raw.githubusercontent.com/wirisp/omada-controller/main/omada.sh
 ```
 
 ```
