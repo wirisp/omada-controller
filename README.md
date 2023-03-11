@@ -74,6 +74,8 @@ echo \
  ```
  
 ```
+mkdir omada
+cd omada
 wget https://raw.githubusercontent.com/wirisp/omada-controller/master/docker-compose.yml
 docker-compose up -d
 ```
