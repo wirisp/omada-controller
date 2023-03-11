@@ -26,11 +26,11 @@ cd /opt/tplink/EAPController
 
 ## Instalacion alternativa en Docker 1
 
-``
+```
 wget https://raw.githubusercontent.com/wirisp/omada-controller/master/docker-compose.yml
 docker-compose up -d
 ```
 
 
-- #Aunque aparezca healty ir a `https://IP:8043`
+# Aunque aparezca healty ir a `https://IP:8043`
 - La instalacion se puede usar en conjunto con el controlador unifi y no interfieren los puertos, yo la realize usando docker y portainer
