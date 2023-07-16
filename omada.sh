@@ -9,11 +9,12 @@ wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | apt-k
 add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
 
 apt update && apt install mongodb-org adoptopenjdk-8-hotspot jsvc
-
-wget https://static.tp-link.com/upload/software/2023/202301/20230130/Omada_SDN_Controller_v5.8.4_Linux_x64.tar.gz
-tar -xf Omada_SDN_Controller_v5.8.4_Linux_x64.tar.gz
-
+wget https://static.tp-link.com/upload/software/2023/202303/20230321/Omada_SDN_Controller_v5.9.31_Linux_x64.tar.gz
+#wget https://static.tp-link.com/upload/software/2023/202301/20230130/Omada_SDN_Controller_v5.8.4_Linux_x64.tar.gz
+tar -xf Omada_SDN_Controller_v5.9.31_Linux_x64.tar.gz
+#tar -xf Omada_SDN_Controller_v5.8.4_Linux_x64.tar.gz
 cd ./Omada_SDN_Controller_v5.8.4_Linux_x64/
+#cd ./Omada_SDN_Controller_v5.8.4_Linux_x64/
 chmod +x ./install.sh
 ./install.sh
 #IP:8088
