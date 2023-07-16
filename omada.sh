@@ -13,7 +13,7 @@ wget https://static.tp-link.com/upload/software/2023/202303/20230321/Omada_SDN_C
 #wget https://static.tp-link.com/upload/software/2023/202301/20230130/Omada_SDN_Controller_v5.8.4_Linux_x64.tar.gz
 tar -xf Omada_SDN_Controller_v5.9.31_Linux_x64.tar.gz
 #tar -xf Omada_SDN_Controller_v5.8.4_Linux_x64.tar.gz
-cd ./Omada_SDN_Controller_v5.8.4_Linux_x64/
+cd ./Omada_SDN_Controller_v5.9.31_Linux_x64/
 #cd ./Omada_SDN_Controller_v5.8.4_Linux_x64/
 chmod +x ./install.sh
 ./install.sh
