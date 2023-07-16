@@ -83,3 +83,32 @@ docker-compose up -d
 
 # Aunque aparezca healty ir a `https://IP:8043`
 - La instalacion se puede usar en conjunto con el controlador unifi y no interfieren los puertos, yo la realize usando docker y portainer
+
+
+### Environment variables variables del sistema
+Si algun puerto se encuentra en uso, podemos cambiarlo de acuerdo a la tabla
+
+| Environment variable | Default | Possible values | Description |
+| --- | --- | --- | --- |
+| HTTPPORT | `8080` | Port from `1025` to `65535` | Internal HTTP port, useful for redirection |
+| HTTPSPORT | `8043` | Port from `1025` to `65535` | Internal HTTPS port, useful for redirection |
+
+### Notas
+
+- It is useful to change the HTTPSPORT as Omada redirects you to its internal `HTTPSPORT`.
+So if you want to run the container with `-p 8000:8000` for the HTTPS port, you need to set `HTTPSPORT=8000`.
+- From [TP Link Omada's FAQ](https://www.tp-link.com/us/support/faq/865), Omada controller uses the ports:
+    - 8043 (TCP) for https
+    - 8088 (TCP) for http
+    - 27001 (UDP) for controller discovery
+    - 27002 (TCP) for controller searching
+    - ~27017 (TCP) for mongo DB server~ (internally)
+    - 29810 (UDP) for EAP discovery
+    - 29811 (TCP) for EAP management
+    - 29812 (TCP) for EAP adoption
+    - 29813 (TCP) for EAP upgrading
+
+## TODOs
+
+- [ ] Healthcheck
+- [ ] Instructions with proxy and port redirection
